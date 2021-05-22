@@ -25,7 +25,7 @@ export const askLocationPermission = (
           default:
             const msg =
               "Something unexpected happened when getting location permission from user";
-            alert(mssg);
+            alert(msg);
             console.log(msg, result);
         }
 
