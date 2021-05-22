@@ -1,4 +1,8 @@
-const initialState = { userLocationPermission: null, status: null };
+const initialState = {
+  userLocationPermission: null,
+  status: null,
+  location: { lat: null, lon: null },
+};
 
 const weather = (state = initialState, action) => {
   switch (action.type) {
