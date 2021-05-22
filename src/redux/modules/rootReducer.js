@@ -1,11 +1,6 @@
 import { combineReducers } from "redux";
 
-const weather = (state = {}, action) => {
-  switch (action.type) {
-    default:
-      return state;
-  }
-};
+import weather from "./weather/reducer";
 
 export default combineReducers({
   weather,
