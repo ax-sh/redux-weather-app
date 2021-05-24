@@ -6,7 +6,7 @@ const appid = "115de6d2aa2e3eadfef25cc9211db9fe";
 const client = axios.create({
   baseURL: BASE_URL,
   responseType: "json",
-  params: { appid },
+  params: { appid, units: "metric" },
 });
 
 export const getWeather = ({ lat, lon }) => {
