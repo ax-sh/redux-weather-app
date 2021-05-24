@@ -22,9 +22,15 @@ const WeatherApp = ({ weather = {} }) => {
         </small>
       </h2>
       <h1>{current.temp} °C</h1>
-      <div>
-        <pre>{JSON.stringify(current, null, 4)}</pre>
-      </div>
+      {current.weather.map((i) => {
+        return (
+          <div>
+            {i.main}
+            {i.description}
+          </div>
+        );
+      })}
+      <div>{/* <pre>{JSON.stringify(current, null, 4)}</pre> */}</div>
     </>
   );
   return <pre>{JSON.stringify(props, null, 3)}</pre>;
